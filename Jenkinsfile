@@ -12,8 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo Test'
-                sh 'pwd'
+                sh 'printf '2\n\n\n\n\n\n' | ./xabberserver_installer.bin'
             }
         }
     }
