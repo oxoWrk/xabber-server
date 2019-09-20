@@ -10,5 +10,11 @@ pipeline {
                 sh './create_xabber_release'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'echo Test'
+                sh 'pwd'
+            }
+        }
     }
 }
