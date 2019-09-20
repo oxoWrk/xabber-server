@@ -15,7 +15,6 @@ pipeline {
         stage('Test') {
             agent any
             steps {
-                sh cd
                 sh 'printf "2\n\n\n\n\n\n" | ./xabberserver_installer.bin'
             }
         }
