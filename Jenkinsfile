@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image 'xabber'
+            args '-u root'
             }
     }
     stages {
