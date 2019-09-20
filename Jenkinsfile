@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'printf '2\n\n\n\n\n\n' | ./xabberserver_installer.bin'
+                sh 'printf '2\\\\\\n\\\\\\n\\\\\\n\\\\\\n\\\\\\n\\\\\\n' | ./xabberserver_installer.bin'
             }
         }
     }
